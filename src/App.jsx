@@ -53,7 +53,6 @@ class App extends React.Component {
   render() {
     let tabChoice = <div />;
 
-
     if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
@@ -65,18 +64,16 @@ class App extends React.Component {
       );
     }
 
-    /* Change below to render students*/
-
-    /*if (this.state.buttonClicked === "students") {
+    if (this.state.buttonClicked === "students") {
       tabChoice = (
         <List
-          placeholder="Add Assignment..." 
-          currList={this.state.assignments}
-          addFunction={this.addAssignment}
+          placeholder="Add Student..." 
+          currList={this.state.students}
+          addFunction={this.addStudent}
           title="Student Roster"
         />
       );
-    }*/
+    }
 
     /* Uncomment lines below to render grades*/
     /*if (this.state.buttonClicked === "grades") {
